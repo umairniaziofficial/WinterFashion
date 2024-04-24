@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ---------Nav Menu------------ */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 8.44vh 6.57vw;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.385vw;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.search-div {
+    width: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.762vh 0.65vw;
+    box-shadow: 0px 4px 9px 2px rgba(150, 150, 150, 0.10);
+}
+
+
+.search-div input {
+    width: 8.138020833333334vw;
+    background-color: transparent;
+    border: 0;
+    margin: 0 8px;
+    outline: none;
+    font-family: "outfit", sans-serif;
+    font-size: 1.11875vw;
+    border-right: 0.1vw solid black;
+}
+
+.ri-menu-3-fill {
+    display: none;
+}
+
+
+@media (max-width:768px) {
+
+    .ri-menu-3-fill {
+        font-size: 3vw;
+        font-weight: 800;
+        display: block;
+
+    }
+
+    .nav .nav-links .search-div input {
+        font-size: 1.8vw;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+}
+
+/* ------Nav Menu End */
+
+
+/* Banner Image Styling */
+
+.banner {
+    width: 100%;
+    height: 114.38848920863309vh;
+    background: url(img/bannerbg.svg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .bannerImage {
+    width: 33.333333333333336vw;
+    height: 76.83453237410072vh;
+}
+
+.left {
+    padding-left: 6.57vw;
+    padding-top: 3vw;
+    width: 40%;
+}
+
+.left h1 {
+    font-size: 4.6875vw;
+    font-weight: 600;
+    padding-bottom: 3.741007194244604vh;
+}
+
+.left h4 {
+    font-size: 1.3020833333333333vw;
+    font-weight: 400;
+    padding-bottom: 6.330935251798561vh;
+}
+
+.blackbtn {
+    position: relative;
+    background: url("img/blackbtnbg.png");
+    width: 9.765625vw;
+    color: white;
+    height: 60px;
+}
+
+.blackbtn h2 {
+    font-size: 1.3020833333333333vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.banner-icons {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+.video {
+    display: flex;
+    align-items: center;
+}
+
+.video img {
+    height: 13.237410071942445vh;
+    width: 5.989583333333333vw;
+}
+
+.video h2 {
+    font-size: 1.3020833333333333vw;
+    font-weight: 500;
+    padding-left: 1vw;
+}
+
+.right {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .search-div
+    {
+        display: none;
+    }
+    .nav
+    {
+        padding: 30px;
+    }
+    .ri-menu-3-fill
+    {
+        font-size: 8vw;
+    }
+    .banner {
+        align-items: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        gap: 0;
+    }
+   
+    .right .bannerImage
+    {
+        width: 88.333333vw;
+    }
+    .banner .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .left h1 {
+        font-size: 16.6vw;
+        padding: 0;
+    }
+
+    .banner .left h4 {
+        font-size: 5vw;
+        padding: 2vh;
+    }
+
+    .left .banner-icons {
+        justify-content: center;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .video img {
+        height: 19.237410071942445vh;
+        width: 10.989583333333333vw;
+    }
+    .video h2
+    {
+        font-size: 7vw;
+    }
+
+    .blackbtn {
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 35.020833333333334vw;
+        height: 14.388489208633093vh;
+    }
+
+    .blackbtn h2
+    {
+        font-size: 3vw;
+    }
+}
+
