@@ -22,6 +22,8 @@ button {
 
 /* ---------Nav Menu------------ */
 .nav {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     padding: 8.44vh 6.57vw;
@@ -68,6 +70,11 @@ button {
 
 
 @media (max-width:768px) {
+    .nav
+    {
+        background-color: white;
+        z-index: 1000;
+    }
 
     .ri-menu-3-fill {
         font-size: 3vw;
@@ -234,3 +241,90 @@ button {
     }
 }
 
+/* Bottom Cards */
+
+.banner-bottom
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+    gap: 30px;
+    width: 100%;
+
+}
+.card
+{
+    width: 24.103515625vw;
+    height: 35.60863309352518vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap: 50px;
+}
+.card h3
+{
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.card1
+{
+    background: url(img/card1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24.103515625vw;
+    height: 35.60863309352518vh;
+}
+.card2
+{
+    background: url(img/card2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24.103515625vw;
+    height: 35.60863309352518vh;
+}
+
+
+.card3
+{
+    background: url(img/card3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24.103515625vw;
+    height: 35.60863309352518vh;
+}
+
+
+.whitebtn
+{
+    background:url(img/whitebtn.svg) ;
+    width: 116px;
+    height: 46px;
+}
+
+
+@media (max-width:768px) {
+    .banner-bottom
+    {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        margin-top: 25vh;
+    }
+
+    .banner-bottom .card
+    {
+        width: 100%;
+    }
+    .banner-bottom .card h3
+    {
+        font-size:8vw;
+    }
+}
+
+/* Trendy Collection Block */
