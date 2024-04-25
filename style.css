@@ -749,7 +749,7 @@ button {
   max-width: 90vw;
   margin: 0 auto;
   margin-top: 8vw;
-  padding: 5vh 0;
+  padding: 10vh 0;
   display: flex;
   color: white;
   justify-content: space-between;
@@ -757,14 +757,14 @@ button {
  }
  
  .footer-text h3 {
-  font-size: 2vw;
+  font-size: 1.6vw;
   font-weight: 600;
   opacity: 0.8;
   padding-bottom: 2vh;
  }
  
  .footer-text h5 {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-weight: 300;
   opacity: 0.6;
   padding-bottom: 1vh;
