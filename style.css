@@ -17,10 +17,10 @@ button {
   border: 0;
   margin: 0;
   outline: none;
+  font-family: "outfit", sans-serif;
   cursor: pointer;
 }
 
-/* ---------Nav Menu------------ */
 .nav {
   background-color: white;
   top: 0;
@@ -90,10 +90,6 @@ button {
   }
 }
 
-/* ------Nav Menu End */
-
-/* Banner Image Styling */
-
 .banner {
   width: 100%;
   height: 114.38848920863309vh;
@@ -102,27 +98,27 @@ button {
   justify-content: space-between;
 }
 
-.right .bannerImage {
+.banner .right .bannerImage {
   width: 33.333333333333336vw;
   height: 76.83453237410072vh;
 }
 
-.left {
+.banner .left {
   padding-left: 6.57vw;
   padding-top: 3vw;
   width: 40%;
 }
 
-.left h1 {
+.banner .left h1 {
   font-size: 4.6875vw;
   font-weight: 600;
   padding-bottom: 3.741007194244604vh;
 }
 
-.left h4 {
+.banner .left h4 {
   font-size: 1.3020833333333333vw;
   font-weight: 400;
-  padding-bottom: 6.330935251798561vh;
+  padding-bottom: 1.330935251798561vh;
 }
 
 .blackbtn {
@@ -164,7 +160,7 @@ button {
   padding-left: 1vw;
 }
 
-.right {
+.banner .right {
   width: 40%;
 }
 
@@ -189,7 +185,7 @@ button {
     gap: 0;
   }
 
-  .right .bannerImage {
+  .banner .right .bannerImage {
     width: 88.333333vw;
   }
   .banner .left {
@@ -207,11 +203,11 @@ button {
     padding: 2vh;
   }
 
-  .left .banner-icons {
+  .banner .left .banner-icons {
     justify-content: center;
   }
 
-  .right {
+  .banner .right {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -236,9 +232,15 @@ button {
   .blackbtn h2 {
     font-size: 3vw;
   }
+  .banner .right {
+    padding: 0;
+    margin: 0;
+  }
+  .banner .right img {
+    padding: 0;
+    margin: 0;
+  }
 }
-
-/* Bottom Cards */
 
 .banner-bottom {
   position: relative;
@@ -313,8 +315,6 @@ button {
     font-weight: 300;
   }
 }
-
-/* Trendy Collection Block */
 
 .section2 {
   width: 100%;
@@ -429,8 +429,6 @@ button {
   }
 }
 
-/* Section 3 Code */
-
 .section3 {
   height: auto;
   margin-top: 28.776978417266186vh;
@@ -487,11 +485,19 @@ button {
     align-items: center;
     padding: 0;
     margin: 0;
+    height: auto;
   }
   .section3 .left img {
     width: 90%;
     height: auto;
     padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .section3 .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .section3 .right h3 {
     font-size: 7vw;
@@ -505,15 +511,17 @@ button {
     padding-top: 2vw;
     padding-bottom: 2vw;
   }
+  .section3 .right .learnMore {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }
 
-
-/* Section 4 */
-
 .section4 {
-  max-width: 1280px;
+  width: 100%;
+  margin-top: 10vw;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 6.889vw;
 }
 
 .sec4-head {
@@ -535,6 +543,15 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+}
+
+.row .image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .row .image-card > img {
@@ -542,12 +559,244 @@ button {
   height: 312px;
 }
 
-
-@media (max-width:768px) {
-  .item-info
-  {
+@media (max-width: 768px) {
+  .item-info {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .info img {
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+    margin-left: 30px;
+  }
 }
+
+.section5 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section5 h1 {
+  font-size: 3.889vw;
+  padding-bottom: 40px;
+}
+
+.large-black-input {
+  display: flex;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.large-black-input input {
+  border: 0;
+  outline: 0;
+  width: calc(60% - 60px);
+  height: 30px;
+  font-size: 1.37vw;
+  font-family: "outfit", sans-serif;
+  background-color: transparent;
+  color: white;
+  bottom: 10px;
+  left: 40px;
+  padding-left: 10px;
+}
+
+.sub {
+  right: 60px;
+  bottom: 5px;
+  height: 60%;
+  width: calc(40% - 60px);
+  background: url(img/subbg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  font-size: 1.367vw;
+  font-weight: 500;
+  color: black;
+}
+
+.section5 img {
+  width: 24.653vw;
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .section5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section5 h1 {
+    font-size: 5vw;
+    padding-bottom: 20px;
+  }
+
+  .large-black-input {
+    width: 80%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .large-black-input input {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+
+  .sub {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: auto;
+    font-size: 2.5vw;
+  }
+
+  .section5 img {
+    width: 60vw;
+    padding-left: 0;
+  }
+}
+
+.section6 {
+  margin-top: 13vw;
+  background-color: #f8f2ed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5.583vw;
+}
+
+.sect6-button {
+  background: url(img/followUsButton.svg);
+  background-repeat: no-repeat;
+}
+
+.section6 .left,
+.section6 .right {
+  padding-top: 3.583vw;
+}
+
+.section6 .center {
+  padding-top: 7vw;
+  padding-left: 5vw;
+}
+
+.section6 h1 {
+  font-weight: 600;
+  padding-bottom: 2vw;
+  font-size: 1.528vw;
+}
+
+@media (max-width: 767px) {
+  .section6 {
+    margin-top: 20vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section6 .left,
+  .section6 .right {
+    padding-top: 10vw;
+    width: 100%;
+  }
+
+  .section6 .center {
+    padding-top: 8vw;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .section6 h1 {
+    font-size: 10vw;
+    padding-bottom: 5vw;
+  }
+
+  .sect6-button {
+    width: 100%;
+    height: auto;
+  }
+
+  .section6 .right {
+    align-self: center;
+  }
+}
+
+
+
+.section7 {
+  background-color: black;
+  opacity: 0.9;
+ }
+ .Footer-Logo
+  {
+    width: 11.944vw;
+    height: 9.028vw;
+  }
+ .section7 .footerdiv {
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 8vw;
+  padding: 5vh 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ 
+ .footer-text h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  opacity: 0.8;
+  padding-bottom: 2vh;
+ }
+ 
+ .footer-text h5 {
+  font-size: 1.5vw;
+  font-weight: 300;
+  opacity: 0.6;
+  padding-bottom: 1vh;
+ }
+ @media (max-width: 768px) {
+  .Footer-Logo
+  {
+    width: 30vw;
+    height: 4vh;
+  }
+.section7
+{
+  padding: 0 10vw;
+  margin-top: 5vh;
+}
+  .section7 .footerdiv {
+     max-width: 95vw;
+     padding-top: 4vh;
+  }
+ 
+  .footer-text {
+     margin-bottom: 5vh;
+  }
+ 
+  .footer-text h3 {
+     font-size: 3vw;
+     padding-bottom: 1vh;
+  }
+ 
+  .footer-text h5 {
+     font-size: 2.5vw;
+     padding-bottom: 0.5vh;
+  }
+ }
+ 
