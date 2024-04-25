@@ -734,18 +734,15 @@ button {
   }
 }
 
-
-
 .section7 {
   background-color: black;
   opacity: 0.9;
- }
- .Footer-Logo
-  {
-    width: 11.944vw;
-    height: 9.028vw;
-  }
- .section7 .footerdiv {
+}
+.Footer-Logo {
+  width: 11.944vw;
+  height: 9.028vw;
+}
+.section7 .footerdiv {
   max-width: 90vw;
   margin: 0 auto;
   margin-top: 8vw;
@@ -754,49 +751,46 @@ button {
   color: white;
   justify-content: space-between;
   flex-wrap: wrap;
- }
- 
- .footer-text h3 {
+}
+
+.footer-text h3 {
   font-size: 1.6vw;
   font-weight: 600;
   opacity: 0.8;
   padding-bottom: 2vh;
- }
- 
- .footer-text h5 {
+}
+
+.footer-text h5 {
   font-size: 1.1vw;
   font-weight: 300;
   opacity: 0.6;
   padding-bottom: 1vh;
- }
- @media (max-width: 768px) {
-  .Footer-Logo
-  {
+}
+@media (max-width: 768px) {
+  .Footer-Logo {
     width: 30vw;
     height: 4vh;
   }
-.section7
-{
-  padding: 0 10vw;
-  margin-top: 5vh;
-}
+  .section7 {
+    padding: 0 10vw;
+    margin-top: 5vh;
+  }
   .section7 .footerdiv {
-     max-width: 95vw;
-     padding-top: 4vh;
+    max-width: 95vw;
+    padding-top: 4vh;
   }
- 
+
   .footer-text {
-     margin-bottom: 5vh;
+    margin-bottom: 5vh;
   }
- 
+
   .footer-text h3 {
-     font-size: 3vw;
-     padding-bottom: 1vh;
+    font-size: 3vw;
+    padding-bottom: 1vh;
   }
- 
+
   .footer-text h5 {
-     font-size: 2.5vw;
-     padding-bottom: 0.5vh;
+    font-size: 2.5vw;
+    padding-bottom: 0.5vh;
   }
- }
- 
+}
